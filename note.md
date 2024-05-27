@@ -20,4 +20,11 @@
 比较底层的处理请求的代码没有写完，需要看看javase的网络编程。
 
 直接使用tomcat来处理。
-tomcat web容器，serverlet容器
+tomcat web容器，serverlet容器,springweb是内置tomcat服务器
+
+serverlet DispatcherServerlet 前端控制器
+![pic2](pictures/微信截图_20240526230411.png)
+
+postman 前端测试工具
+
+controller类文件是不是只能写一个，然后再同一个类中写不同的方法？
