@@ -20,19 +20,19 @@
 --- 
 ***
 
-比较底层的处理请求的代码没有写完，需要看看javase的网络编程。
 
-直接使用tomcat来处理。
 tomcat web容器，serverlet容器,springweb是内置tomcat服务器
 
 serverlet DispatcherServerlet 前端控制器
+
 ![pic2](pictures/微信截图_20240526230411.png)
+
 
 postman 前端测试工具
 
-controller类文件是不是只能写一个，然后再同一个类中写不同的方法？
 
-ioc di入门
+## ioc di入门
+
 
 将service层和dao层的实现类交给ioc容器管理
 为controller和service注入运行时 依赖的对象
@@ -44,7 +44,8 @@ ioc di入门
 service 和 controller 依赖了对象 需要autowried
 dao 和service 他俩需要 component注解交给ioc
 
-component的衍生注解
+## component的衍生注解
+
 
 @Component  不属于下面三种 但是想交给ioc管理的
 
