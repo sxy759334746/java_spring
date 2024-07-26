@@ -13,10 +13,15 @@ postman 前端测试工具
 ## ioc di入门
 
 将service层和dao层的实现类交给ioc容器管理
+
 为controller和service注入运行时 依赖的对象
+
 @Component注解  @Component  //加上component注解 表示将当前类交给容器管理 成为ioc容器中的bean
+
 @Autowired //表示运行时ioc会提供该类型的bean对象 并赋值给该变量 依赖注入
+
 service 和 controller 依赖了对象 需要autowried
+
 dao 和service 他俩需要 component注解交给ioc
 
 ## component的衍生注解
@@ -25,14 +30,22 @@ dao 和service 他俩需要 component注解交给ioc
 @Service
 @Controller
 @repository
+
 bean有默认名字 默认类名首字母小写 可以用value设置
+
 @ComponentScan  组件扫描默认是启动类所在包和子包 用value 和basePackages 来指定扫描路径
+
 @Autowired注解是默认按照类型来分配的 当有多个相类型的bean 会报错
+
 可以通过
 @Primary 加在多个同类型bean的其中一个上 比如 @primary @service
+
 @Qualifier 加在autowired上面 @Qualifier("bean name")
+
 @Resource  这个在包javax.annotation.resource下  @Resource(name = "bean name")
+
 autowired是spring框架提供的注解 resource是jdk提供的注解
+
 前者根据类型注入  后者按照名称注入
 
 ## mysql
